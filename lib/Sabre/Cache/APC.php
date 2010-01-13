@@ -5,7 +5,6 @@
  * 
  * @package Sabre
  * @subpackage Cache
- * @version $Id: APC.php 12600 2009-01-29 17:10:42Z evert $
  * @copyright Copyright (C) 2009-2010 Rooftop Solutions. All rights reserved.
  * @author Evert Pot (http://www.rooftopsolutions.nl/)
  * @license http://code.google.com/p/sabrecache/wiki/License Modified BSD License

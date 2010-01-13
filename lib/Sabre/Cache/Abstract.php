@@ -5,10 +5,10 @@
  *
  * @package Sabre
  * @subpackage Cache
- * @version $Id: APC.php 12600 2009-01-29 17:10:42Z evert $
  * @copyright Copyright (C) 2009-2010 Rooftop Solutions. All rights reserved.
  * @author Evert Pot (http://www.rooftopsolutions.nl/)
  * @license http://code.google.com/p/sabrecache/wiki/License Modified BSD License
+*/
 
 /**
  * This is the abstract Cache class.
@@ -56,7 +56,7 @@ abstract class Sabre_Cache_Abstract {
      * @param string $key 
      * @return null 
      */
-    abstract function fetch( $key );
+    abstract function fetch($key);
 
     /**
      * Deletes an item from the cache. 
@@ -64,7 +64,7 @@ abstract class Sabre_Cache_Abstract {
      * @param string $key 
      * @return bool 
      */
-    abstract function delete( $key );
+    abstract function delete($key);
 
 
     /**
@@ -125,7 +125,7 @@ abstract class Sabre_Cache_Abstract {
     }
 
     /**
-     * decrements an integer valu
+     * decrements an integer value
      *
      * If the key didn't not exist, it will not be created
      * If the key could not be converted to an integer, value will be placed in the item
