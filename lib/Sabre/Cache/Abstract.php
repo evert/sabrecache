@@ -117,7 +117,7 @@ abstract class Sabre_Cache_Abstract {
 
         $oldvalue = $this->fetch($key);
         if (!is_null($oldvalue)) {
-            $newvalue = (is_numeric($oldvalue))?$oldvalue+1:$value; 
+            $newvalue = (is_int($oldvalue) || ctype_digit($oldvalue))?$oldvalue+1:$value; 
             $this->store($key,(int)$newvalue);
             return $newvalue;
         }
