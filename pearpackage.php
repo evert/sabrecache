@@ -2,11 +2,11 @@
 <?php
 
 /**
- * PEAR package.xml generator.
+ *; PEAR package.xml generator.
  *
  */
 require_once 'PEAR/PackageFileManager2.php';
-require_once dirname(__FILE__) . '/../lib/Sabre/Cache/Version.php';
+require_once dirname(__FILE__) . '/lib/Sabre/Cache/Version.php';
 PEAR::setErrorHandling(PEAR_ERROR_DIE);
 
 $apiVersion     = Sabre_Cache_Version::VERSION;
@@ -27,7 +27,7 @@ $package = new PEAR_PackageFileManager2();
 
 $package->setOptions(
     array(
-        'filelistgenerator'          => 'svn',
+        'filelistgenerator'          => 'file',
         'simpleoutput'               => true,
         'baseinstalldir'             => '/',
         'packagedirectory'           => './',
@@ -39,6 +39,7 @@ $package->setOptions(
             'LICENCE'                => 'doc',
         ),
         'ignore'                     => array(
+            'pearpackage.php',
         )
     )
 );
