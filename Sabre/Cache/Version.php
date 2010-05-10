@@ -14,7 +14,7 @@ class Sabre_Cache_Version {
     /**
      * Full version number
      */
-    const VERSION = '0.1.0';
+    const VERSION = '0.1.1';
 
     /**
      * Stability : alpha, beta, stable
