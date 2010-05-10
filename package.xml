@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Sabre_Cache</name>
+ <channel>pear.sabredav.org</channel>
+ <summary>Sabre_Cache is a simple cache-engine abstraction library</summary>
+ <description>Sabre_Cache is an abstraction library for caching engines.
+
+Currently there&apos;s support for Memcache, APC and the filesystem</description>
+ <lead>
+  <name>Evert Pot</name>
+  <user>evert</user>
+  <email>evert@rooftopsolutions.nl</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-05-10</date>
+ <time>07:44:27</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+ <notes>
+First public version
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="a4f0a07dc4b15e8671d4e7d11a753314" name="Sabre/Cache/Abstract.php" role="php" />
+   <file baseinstalldir="." md5sum="e25bf81e21b04f0473c7afefdb18bb5e" name="Sabre/Cache/APC.php" role="php" />
+   <file baseinstalldir="." md5sum="64e89f6d1644263dd42fa541796018d8" name="Sabre/Cache/Exception.php" role="php" />
+   <file baseinstalldir="." md5sum="630e2730cb793ba265aed64c9f19acc9" name="Sabre/Cache/Filesystem.php" role="php" />
+   <file baseinstalldir="." md5sum="ad65a2062abf559ef44f0651c8eea869" name="Sabre/Cache/MemCache.php" role="php" />
+   <file baseinstalldir="." md5sum="7f237f459dc70e4d58284918a62ff4f8" name="Sabre/Cache/Process.php" role="php" />
+   <file baseinstalldir="." md5sum="554db244bb9b6da3a598f2562de19e92" name="Sabre/Cache/Version.php" role="php" />
+   <file baseinstalldir="." md5sum="79589bb5a0b2962b7518a5548f281df3" name="ChangeLog" role="data" />
+   <file baseinstalldir="." md5sum="e1ca3fc89f22d92e5fd20a5d79372761" name="LICENCE" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>Sabre</name>
+    <channel>pear.sabredav.org</channel>
+    <min>1.0.0</min>
+   </package>
+  </required>
+  <optional>
+   <extension>
+    <name>memcache</name>
+   </extension>
+   <extension>
+    <name>APC</name>
+   </extension>
+  </optional>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2010-05-10</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+First public version
+   </notes>
+  </release>
+ </changelog>
+</package>
